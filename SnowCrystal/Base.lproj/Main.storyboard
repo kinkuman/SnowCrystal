@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SnowCrystal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winter" translatesAutoresizingMaskIntoConstraints="NO" id="4aX-KO-3lX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZL-xd-pjL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap me" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crN-Rw-Yhv">
+                                <rect key="frame" x="157" y="324.5" width="61" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="crN-Rw-Yhv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ru-cy-Uql"/>
+                            <constraint firstItem="eZL-xd-pjL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="38W-kR-ckm"/>
+                            <constraint firstItem="4aX-KO-3lX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6d0-X8-uQ8"/>
+                            <constraint firstItem="4aX-KO-3lX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="I66-pd-eTY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4aX-KO-3lX" secondAttribute="bottom" id="JL9-tJ-nBX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4aX-KO-3lX" secondAttribute="trailing" id="L6a-Fq-1ih"/>
+                            <constraint firstItem="eZL-xd-pjL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nin-i6-zaM"/>
+                            <constraint firstItem="eZL-xd-pjL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tgQ-Bk-BmP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eZL-xd-pjL" secondAttribute="bottom" id="vDt-0t-ziH"/>
+                            <constraint firstItem="crN-Rw-Yhv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yHF-jt-HGa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="crN-Rw-Yhv" id="F9n-12-ho7"/>
+                        <outlet property="snowsView" destination="eZL-xd-pjL" id="bOp-78-2dm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="winter" width="1754" height="1240"/>
+    </resources>
+</document>
